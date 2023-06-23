@@ -149,12 +149,12 @@ def handle_submit(input_text):
 
 # Define the Gradio interface
 iface = gr.Interface(
-    fn=handle_submit,                                      # Function to be called on user input
-    inputs=gr.inputs.Textbox(lines=2),                     # Text input
-    outputs=gr.outputs.HTML(),                             # Output type set to HTML
-    title="Chat with your Repo",                           # Title of the web page
-    description="Enter your question and get a response.", # Description
-    allow_flagging=False                                   # Disable flagging
+    fn=handle_submit,                                         # Function to be called on user input
+    inputs=gr.components.Textbox(lines=2),                    # Text input
+    outputs=gr.components.HTML(),                             # Output type set to HTML
+    title="Chat with your Repo",                              # Title of the web page
+    description="Enter your question and get a response.",    # Description
+    allow_flagging="never"                                    # Disable flagging
 )
 
 # Launch the Gradio app
