@@ -17,7 +17,7 @@ Only correct text based on:
 {{~/system}}
 
 {{#user~}}
-I need assistance with my writing. Help correct any Grammar and Spelling errors and suggest ways to improve my writing such as suggesting a diverse vocabulary.
+I need assistance with my writing. Please assist me with correction.
 Here is the text I wrote:
 <text>
 {{text_input}}
